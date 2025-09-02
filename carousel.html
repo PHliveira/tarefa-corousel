@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa carousel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<style>
+   .carousel-item {
+    width: 100%;
+    height: 45vh; /* altura responsiva (50% da viewport) */
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* mantém o corte, sem distorcer */
+    display: block;
+}
+    
+  
+
+    h2 {
+        text-align: left;
+        margin-left: 15px;
+        font-size: 20px;
+    }
+</style>
+<body>
+     <div class="container">
+    <header class="p-3">
+        <h1>Tarefa carousel - grid - card</h1>
+    </header>
+    <section>
+       
+            <div id="carouselEx" class="carousel slide " data-bs-ride="carousel" >
+                <div class="carousel-inner  " >
+                    <div data-bs-interval="2500" class="carousel-item active ">
+                        <img src="https://as1.ftcdn.net/v2/jpg/04/20/19/88/1000_F_420198849_oH6rPuYiG6c0Ev5VsT5B61t20pVQdIpH.jpg"
+                            alt="tela telefone">
+                            <div class="carousel-caption text-white d-inline-block px-1 py-1 " style="background-color: rgba(13, 110, 253, 0.4);">
+                                <h2>Primeira Imagem</h2>
+                            </div>
+                    </div>
+                    <div data-bs-interval="2500" class="carousel-item">
+                        <img src="https://as2.ftcdn.net/v2/jpg/03/20/33/65/1000_F_320336597_Hagzkd6PiRopxuQGs3As1D6WGHXaMzVT.jpg"
+                            alt="tela telefone">
+                            <div class="carousel-caption text-white d-inline-block px-1 py-1" style="background-color: rgba(13, 110, 253, 0.4);">
+                                <h2>Segunda Imagem</h2>
+                            </div>
+                    </div>
+                    <div data-bs-interval="2500" class="carousel-item">
+                        <img src="https://as2.ftcdn.net/v2/jpg/07/78/54/21/1000_F_778542189_o3c0k9wYTkFMBYkcxJ6tczFj76QRSxrE.jpg"
+                            alt="tela telefone">
+                            <div class="carousel-caption text-white d-inline-block px-1 py-1 " style="background-color: rgba(13, 110, 253, 0.4);">
+                                <h2>Terceira Imagem</h2>
+                            </div>
+                    </div>
+                </div>
+                <button  data-bs-target="#carouselEx" data-bs-slide="prev" class="carousel-control-prev" type="button" style="background-color: rgba(0, 0, 0, 0.5); ">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carouselEx" data-bs-slide="next" class="carousel-control-next" type="button" style="background-color: rgba(0, 0, 0, 0.5); ">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="carouselEx" data-bs-slide-to="0"></button>
+                    <button class="active" type="button" data-bs-target="carouselEx" data-bs-slide-to="1"></button>
+                    <button class="active" type="button" data-bs-target="carouselEx" data-bs-slide-to="2"></button>
+
+                </div>
+            </div>
+            
+            </div>
+    </section>
+
+    <section id="grids" class="container" >
+                <div class="p-3">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 p-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    cabeçalho do header 
+                                </div>
+                              <img src="https://placehold.co/150" alt="">
+                              <div class="card-body">
+                                <h4>Titulo card</h4>
+                                <h5>Sub titulo</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing evut am vees sed esse et. Suscipit.</p>
+                                <a href="#" class="btn btn-primary">Botão link</a>
+                              </div>
+                              
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6 p-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    cabeçalho do header 
+                                </div>
+                              <img src="https://placehold.co/150" alt="">
+                              <div class="card-body">
+                                <h4>Titulo card</h4>
+                                <h5>Sub titulo</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing evut am vees sed esse et. Suscipit.</p>
+                                <a href="#" class="btn btn-primary">Botão link</a>
+                              </div>
+                              
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6 p-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    cabeçalho do header 
+                                </div>
+                              <img src="https://placehold.co/150" alt="">
+                              <div class="card-body">
+                                <h4>Titulo card</h4>
+                                <h5>Sub titulo</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing evut am vees sed esse et. Suscipit.</p>
+                                <a href="#" class="btn btn-primary">Botão link</a>
+                              </div>
+                              
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6 p-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    cabeçalho do header 
+                                </div>
+                              <img src="https://placehold.co/150" alt="">
+                              <div class="card-body">
+                                <h4>Titulo card</h4>
+                                <h5>Sub titulo</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing evut am vees sed esse et. Suscipit.</p>
+                                <a href="#" class="btn btn-primary">Botão link</a>
+                              </div>
+                              
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6 p-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    cabeçalho do header 
+                                </div>
+                              <img src="https://placehold.co/150" alt="">
+                              <div class="card-body">
+                                <h4>Titulo card</h4>
+                                <h5>Sub titulo</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing evut am vees sed esse et. Suscipit.</p>
+                                <a href="#" class="btn btn-primary">Botão link</a>
+                              </div>
+                              
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6 p-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    cabeçalho do header 
+                                </div>
+                              <img src="https://placehold.co/150" alt="">
+                              <div class="card-body">
+                                <h4>Titulo card</h4>
+                                <h5>Sub titulo</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing evut am vees sed esse et. Suscipit.</p>
+                                <a href="#" class="btn btn-primary">Botão link</a>
+                              </div>
+                              
+                            </div>
+                        </div>
+
+                      </div>                       
+                </div>
+                 
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
